@@ -1,17 +1,22 @@
-# Tic Tac Toe
-A simple Tic Tac Toe game built with HTML, CSS, and JavaScript.
+# Tic Tac Toe 🎮  
 
-## Features
-- Two-player mode
-- Winner detection and game reset option
-- Dynamic UI updates
+A simple Tic Tac Toe game built with **HTML**, **CSS**, and **JavaScript**.  
 
-## How to Run
-## How to Run
-1. Clone the repository:
-   git clone [https://github.com/<your-username>/tic-tac-toe.git](https://github.com/Omansh-Sharma1/Tick-Tac-Toe.git)
+## Features ✨  
+- 👫 **Two-player mode**  
+- 🏆 **Winner detection and game reset option**  
+- 🔄 **Dynamic UI updates**  
 
-## What I Learned
-- JavaScript game logic
-- DOM manipulation
-- CSS layout and styling
+## How to Run 🚀  
+1. Clone the repository:   
+   git clone https://github.com/Omansh-Sharma1/Tick-Tac-Toe.git
+   
+2. Fire up the HTML on your browser. 🌐
+
+3. Enjoy! 🎉
+
+## What I Learned 📚
+💡 JavaScript game logic
+🖱️ DOM manipulation
+🎨 CSS layout and styling
+
