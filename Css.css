@@ -1,0 +1,189 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: aliceblue;
+    color: black;
+    margin: 5px;
+}
+
+h1 {
+    color: #eecd61;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    font-size: 60px;
+    text-align: center;
+}
+
+body.light-mode {
+    background-color: aliceblue;
+    color: black;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  h1.light-mode {
+    color: #eecd61;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .button.light-mode {
+    background-color: #eceee5;
+    color: #433232;
+    border: 2px solid aqua;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  }
+  
+  .button.light-mode:hover {
+    background-color: #d4d4d4;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .control-button.light-mode {
+    background-color: #eecd61;
+    color: #242423;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  #winner-display.light-mode {
+    color: #eecd61;
+    transition: color 0.5s ease-in-out;
+  }
+  
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  h1.dark-mode {
+    color: #ffa500;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .button.dark-mode {
+    background-color: #4d4d4d;
+    color: #f5f5f5;
+    border: 2px solid #ffa500;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  }
+  
+  .button.dark-mode:hover {
+    background-color: #5e5e5e;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .control-button.dark-mode {
+    background-color: #ffa500;
+    color: #2c2c2c;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  #winner-display.dark-mode {
+    color: #ffa500;
+    transition: color 0.5s ease-in-out;
+  }
+
+#container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#players {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust as needed for responsiveness */
+    max-width: 600px; /* Limit maximum width for larger screens */
+    margin-bottom: 20px;
+}
+
+#players p {
+    font-size: 20px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: black;
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+}
+
+#players p:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 5px #433232;
+}
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    height: 60vmin;
+    max-width: 60vh;
+    min-width: 50vh;
+    margin: auto; /* Center horizontally within the container */
+}
+
+.button {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid aqua;
+    height: 18vmin;
+    width: 18vmin;
+    padding: 2px;
+    background-color: #eceee5;
+    color: #433232;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.button:hover {
+    background-color: #d4d4d4;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.control-button {
+    background-color: #eecd61;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #242423;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.control-button:hover {
+    background-color: #d4b253;
+    transform: scale(1.05);
+}
+
+/* Animation for winner display */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #eecd61;
+    }
+    50% {
+        text-shadow: 0 0 20px #ffcc00;
+    }
+    100% {
+        text-shadow: 0 0 5px #eecd61;
+    }
+}
+
+#winner-display {
+    font-size: 48px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #eecd61;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-bottom: 20px;
+    height: 80px; /* Add this line to reserve space */
+    width: 400px;
+    overflow: hidden; /* Add this line to hide excess text */
+    transition : ease;
+  }
